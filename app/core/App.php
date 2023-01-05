@@ -2,7 +2,7 @@
 // Define the App class
 class App
 {
-
+    // new comment
     //property
     protected $controller = 'Home'; // protected with default method home
     protected $method = 'index';
