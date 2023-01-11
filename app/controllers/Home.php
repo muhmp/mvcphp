@@ -6,6 +6,6 @@ class Home
     public function index()
     {
         //output
-        echo 'home/index';
+        $this->view('home/index');
     }
 }

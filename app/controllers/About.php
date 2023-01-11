@@ -4,7 +4,7 @@
 class About
 {
 
-    //method
+    //method index as default 
     public function index($name = 'Mamet', $job = 'Software engineering')
     {
         echo "Hello, my name is $name, I am a $job";
