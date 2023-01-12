@@ -1,17 +1,19 @@
 <?php
 
+require_once 'core/Controller.php';
+
 //class
-class About
+class About extends Controller
 {
 
     //method index as default 
-    public function index($name = 'Mamet', $job = 'Software engineering')
+    public function index($name = 'Mamet', $job = 'Software engineering', $age = 27)
     {
-        echo "Hello, my name is $name, I am a $job";
+        $this->view('about/index');
     }
     //method
     public function page()
     {
-        echo 'About/page';
+        $this->view('about/page');
     }
 }

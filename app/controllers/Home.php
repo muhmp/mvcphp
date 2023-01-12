@@ -1,11 +1,10 @@
 <?php
 //
-class Home
+class Home extends Controller
 {
     //method inside
     public function index()
     {
-        //output
         $this->view('home/index');
     }
 }
