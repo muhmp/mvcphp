@@ -1,5 +1,5 @@
 <?php
-//
+//class extends to Controller
 class Home extends Controller
 {
     //method inside
@@ -9,7 +9,7 @@ class Home extends Controller
         //model
         $data['name'] = $this->model('User_model')->getUser();  //get user
         $this->view('templates/header', $data);
-        $this->view('home/index',$data);
+        $this->view('home/index', $data);
         $this->view('templates/footer');
     }
 }

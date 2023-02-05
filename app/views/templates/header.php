@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="<?= BASEURL; ?>">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="<?= BASEURL; ?>/student">Student</a>
+                    <a class="nav-item nav-link" href="<?= BASEURL; ?>/Student">Student</a>
                     <a class="nav-item nav-link" href="<?= BASEURL; ?>">About</a>
                 </div>
             </div>
