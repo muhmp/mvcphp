@@ -2,9 +2,12 @@
     <div class="row">
         <div class="col-6">
             <h3>Student info</h3>
-            <?php foreach ($data['std'] as $std) : ?>
+            <?php foreach ($data['student'] as $student) : ?>
                 <ul>
-                    <li><?=  ?></li>
+                    <li><?= $student["name"]; ?></li>
+                    <li><?= $student["ID"]; ?></li>
+                    <li><?= $student["email"]; ?></li>
+                    <li><?= $student["occupation"]; ?></li>
                 </ul>
             <?php endforeach; ?>
         </div>

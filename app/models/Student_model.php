@@ -4,7 +4,8 @@
 class Student_model
 {
     //array
-    private $std = [
+    private $student =
+    [
         [
             "name" => "Person 1",
             "ID" => "001",
@@ -31,6 +32,6 @@ class Student_model
     //method to get the data
     public function getAllStudent()
     {
-        return $this->std;
+        return $this->student;
     }
 }
