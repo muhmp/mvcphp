@@ -2,7 +2,7 @@
 // Define the App class
 class App
 {
-    // new comment
+
     //property
     protected $controller = 'Home'; // protected with default method home
     protected $method = 'index';
@@ -13,8 +13,7 @@ class App
         // Parse the URL and store the result in a variable
         $url = $this->parseURL();
 
-        /*
-        controllers */
+        /*controllers */
         if (file_exists('../app/controllers/' . $url[0] . '.php')) {
             //if we write about -> about will be a new controller
             $this->controller = $url[0];
@@ -23,7 +22,7 @@ class App
         }
 
         //method call the controller and combine with controller
-        // we initiatte the class so we can call the method later
+        // we initiate the class so we can call the method later
         require_once '../app/controllers/' . $this->controller . '.php';
         $this->controller = new $this->controller; //$this->controller is object
 
