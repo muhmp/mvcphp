@@ -4,7 +4,7 @@
 //class extends to Controller
 class Student extends Controller
 {
-
+    //method
     public function index()
     {
 
@@ -13,7 +13,7 @@ class Student extends Controller
         $data['student'] = $this->model('Student_model')->getAllStudent();
         //call the view method
         $this->view('templates/header', $data);
-        $this->view('mahasiswa/index', $data);
+        $this->view('Student/index', $data);
         $this->view('templates/footer');
     }
 }
