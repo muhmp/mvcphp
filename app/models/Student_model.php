@@ -9,7 +9,7 @@ class Student_model
         [
             "name" => "Person 1",
             "ID" => "001",
-            "email" => "matt1@gmail.com",
+            "email" => "person1@gmail.com",
             "occupation" => "engineer"
         ],
 
