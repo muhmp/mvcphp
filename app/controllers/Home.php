@@ -2,7 +2,7 @@
 //class extends to Controller
 class Home extends Controller
 {
-    //method inside
+    //method inside : page name
     public function index()
     {
         $data['title'] = 'Home';

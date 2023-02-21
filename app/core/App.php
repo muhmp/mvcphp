@@ -1,9 +1,13 @@
 <?php
+
+//constructing the URL
+
+
 // Define the App class
 class App
 {
 
-    //property
+    //property : URL
     protected $controller = 'Home'; // protected with default method home
     protected $method = 'index';
     protected $params = []; //protected with parameter array
@@ -13,7 +17,7 @@ class App
         // Parse the URL and store the result in a variable
         $url = $this->parseURL();
 
-        /*controllers */
+        //if exist 
         if (file_exists('../app/controllers/' . $url[0] . '.php')) {
             //if we write about -> about will be a new controller
             $this->controller = $url[0];
@@ -45,7 +49,7 @@ class App
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
-    //def
+    //parse url 
     public function parseURL()
     {
         if (isset($_GET['url'])) {
