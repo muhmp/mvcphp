@@ -3,35 +3,30 @@
 //class
 class Student_model
 {
-    //array
-    private $student =
-    [
-        [
-            "name" => "Person 1",
-            "ID" => "001",
-            "email" => "person1@gmail.com",
-            "occupation" => "engineer"
-        ],
+    //define the variable
+    private $dbh;
+    private $stmt;
 
-        [
-            "name" => "Person 2",
-            "ID" => "002",
-            "email" => "person2@gmail.com",
-            "occupation" => "pilot"
-        ],
+    public function __construct()
+    {
+        //data source name
+        $dbh = 'mysql:host=localhost;dbname=mvcphp';
 
-        [
-            "name" => "Person 3",
-            "ID" => "003",
-            "email" => "person3@gmail.com",
-            "occupation" => "Doctor"
-        ],
-    ];
+        //check
+        try {
+            $this->dbh = new PDO($dsn, 'root', '');
+        } catch (PDOException) {
+            die($e->getMessage());
+        }
+    }
+
 
 
     //method to get the data
     public function getAllStudent()
     {
-        return $this->student;
+        //return $this->student;
+
+        $this->stmt = $this->dbh->prepare('SELECT * FROM Student');
     }
 }
