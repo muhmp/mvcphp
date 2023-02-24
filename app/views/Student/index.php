@@ -5,7 +5,6 @@
             <?php foreach ($data['student'] as $student) : ?>
                 <ul>
                     <li><?= $student["name"]; ?></li>
-                    <li><?= $student["ID"]; ?></li>
                     <li><?= $student["email"]; ?></li>
                     <li><?= $student["occupation"]; ?></li>
                 </ul>
